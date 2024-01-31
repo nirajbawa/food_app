@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/home"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mainimg"
+            android:background="@drawable/searchbg"
+            android:drawableLeft="@drawable/search"
+            android:hint="Search"
+            android:drawableTint="@color/cardview_dark_background"
+            android:drawablePadding="10dp"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/mainimg"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:src="@drawable/dashboardbg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="30dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:background="#FF7C18"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="Fast Food"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Only today this fast food offer"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_border_bg"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:text="@string/_5_00"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FF7C18"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@null" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="Indulge in a delightful treat with our exclusive fast food offer! Dive into mouthwatering burgers and crispy fries, crafted with love and flavor. Savor the perfect blend of quality ingredients, making today a feast for your taste buds. Hurry, it's a limited-time special."
+                    android:textSize="13dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/orderbtnbg"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/order_now"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

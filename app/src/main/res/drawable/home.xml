@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid color shape -->
+    <item>
+        <shape>
+            <solid android:color="#E4E4E4" />
+            <corners
+                android:bottomLeftRadius="60dp"
+                android:bottomRightRadius="60dp" />
+        </shape>
+    </item>
+    <!-- Transparent outer corners -->
+    <item android:left="-5dp" android:right="-5dp" android:top="-5dp" android:bottom="-5dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <corners
+                android:bottomLeftRadius="65dp"
+                android:bottomRightRadius="65dp" />
+        </shape>
+    </item>
+</layer-list>
